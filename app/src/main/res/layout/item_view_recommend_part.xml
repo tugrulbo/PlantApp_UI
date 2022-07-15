@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="18dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginBottom="10dp">
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <ImageView
+           android:id="@+id/homeRecommendedItemViewImage"
+           android:layout_width="match_parent"
+           android:layout_height="220dp"
+           android:src="@drawable/peace_lily"
+           android:scaleType="centerCrop"
+           app:layout_constraintTop_toTopOf="parent"/>
+
+       <TextView
+           android:id="@+id/homeRecommendedItemTextTitle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/homeRecommendedItemViewImage"
+           app:layout_constraintStart_toStartOf="parent"
+           android:layout_marginTop="10dp"
+           android:layout_marginHorizontal="10dp"
+           tools:text="Peace Lily"
+           android:textSize="18sp"
+           android:textColor="@color/font_color_2" />
+
+       <TextView
+           android:id="@+id/homeRecommendedItemTextPrice"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/homeRecommendedItemViewImage"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:layout_marginTop="10dp"
+           android:layout_marginHorizontal="10dp"
+           tools:text="$400"
+           android:textSize="18sp"
+           android:textColor="@color/font_color_1"/>
+
+       <TextView
+           android:id="@+id/homeRecommendedItemTextSub"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/homeRecommendedItemTextTitle"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           android:layout_marginStart="10dp"
+           android:layout_marginBottom="10dp"
+           tools:text="Spathiphyllum"
+           android:textSize="16sp"
+           android:layout_marginHorizontal="10dp"
+           android:textColor="@color/font_color_3"/>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
