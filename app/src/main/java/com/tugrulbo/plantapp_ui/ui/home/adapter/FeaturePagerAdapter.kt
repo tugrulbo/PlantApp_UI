@@ -10,6 +10,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.tugrulbo.plantapp_ui.R
 import com.tugrulbo.plantapp_ui.model.RecommendedItemsModel
+import org.w3c.dom.Text
 
 class FeaturePagerAdapter(
     private val dataValue:List<RecommendedItemsModel>,
