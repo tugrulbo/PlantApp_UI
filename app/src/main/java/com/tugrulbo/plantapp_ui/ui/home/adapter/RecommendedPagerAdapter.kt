@@ -20,6 +20,7 @@ class RecommendedPagerAdapter(
     inner class ViewPagerHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         private val title:TextView = itemView.findViewById(R.id.homeRecommendedItemTextTitle)
         private val subTitle:TextView = itemView.findViewById(R.id.homeRecommendedItemTextSub)
+        private val price:TextView = itemView.findViewById(R.id.homeRecommendedItemTextPrice)
         private val image:ImageView = itemView.findViewById(R.id.homeRecommendedItemViewImage)
 
         fun bind(){
@@ -37,10 +38,16 @@ class RecommendedPagerAdapter(
                 title.visibility = View.GONE
             }
 
-            dataValue[layoutPosition].subTitle?.let {_title->
-                subTitle.text = _title
+            dataValue[layoutPosition].subTitle?.let {_subtitle->
+                subTitle.text = _subtitle
             }?:run{
                 subTitle.visibility = View.GONE
+            }
+
+            dataValue[layoutPosition].price?.let {_price->
+                price.text = _price
+            }?:run{
+                price.visibility = View.GONE
             }
 
             itemView.setOnClickListener {

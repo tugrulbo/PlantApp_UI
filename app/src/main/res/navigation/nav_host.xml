@@ -9,5 +9,19 @@
         android:id="@+id/homeFragment"
         android:name="com.tugrulbo.plantapp_ui.ui.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/homeFragmentToProductDetail"
+            app:destination="@id/productDetailFragment" >
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.tugrulbo.plantapp_ui.ui.product_detail.ProductDetailFragment"
+        android:label="fragment_product_detail"
+        tools:layout="@layout/fragment_product_detail" >
+
+    </fragment>
 </navigation>

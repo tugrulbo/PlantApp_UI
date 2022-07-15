@@ -10,6 +10,11 @@
     <string name="home_more">More</string>
     <string name="home_feature_plants">Feature Plants</string>
 
+    <!-- Product Detail -->
+    <string name="product_detail_buy_now">Buy Now</string>
+    <string name="product_detail_desc">Description</string>
+
+
     <!-- Bottom Navbar Title -->
     <string name="home">Homepage</string>
     <string name="favorites">Favorites</string>

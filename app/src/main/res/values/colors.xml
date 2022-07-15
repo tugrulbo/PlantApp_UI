@@ -11,6 +11,7 @@
     <!-- Colors -->
     <color name="main_bg">#098d5d</color>
     <color name="edge_color">#6cba9b</color>
+    <color name="edge_color_opacity">#336CBA9B</color>
     <color name="font_color_1">#258E74</color>
     <color name="font_color_2">#6f6f6f</color>
     <color name="font_color_3">#1DA886</color>
